@@ -2,9 +2,8 @@ var Picture = React.createClass({
   render: function () {
     return (
       <div className="pictitle">
-        <img className="picurl" src={this.props.picurl}>
-        </img>
-          {this.props.pictitle}
+        <h2> {this.props.pictitle} </h2>
+        <img className="picurl" src={this.props.picurl}></img>
       </div>
       );
   }
@@ -86,7 +85,7 @@ var PictureForm = React.createClass({
     return (
       <form className="pictureForm" onSubmit={this.handleSubmit}>
         <input type="text" placeholder="Enter a URL" ref="picurl" />
-        <input type="text" placeholder="Enter a Title" ref="title" />
+        <input type="text" placeholder="Enter a Title" ref="pictitle" />
         <input type="submit" value="Post" />
       </form>
       );
