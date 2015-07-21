@@ -1,7 +1,7 @@
 class PicturesController < ApplicationController
 
 	def index
-		@pictures = [icture.all
+		@pictures = Picture.all
 	  respond_to do |format|
 		  format.json { render json: @pictures }
 		end
