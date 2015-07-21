@@ -1,10 +1,9 @@
 var Picture = React.createClass({
   render: function () {
     return (
-      <div className="picurl">
-        <h2 className="pictitle">
-          {this.props.picurl}
-        </h2>
+      <div className="pictitle">
+        <img className="picurl" src={this.props.picurl}>
+        </img>
           {this.props.pictitle}
       </div>
       );
@@ -15,7 +14,7 @@ var PictureList = React.createClass({
   render: function () {
     var pictureNodes = this.props.pictures.map(function (picture, index) {
       return (
-        <Picture picurl={picture.picurl} picture={picture.picture} key={index} />
+        <Picture picurl={picture.picurl} pictitle={picture.pictitle} key={index} />
         );
     });
  
