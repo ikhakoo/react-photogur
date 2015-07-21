@@ -93,9 +93,11 @@ var PictureForm = React.createClass({
     return (
       <form className="pictureForm" onSubmit={this.handleSubmit}>
       <br></br>
-        <input type="text" placeholder="Enter a URL" ref="picurl" />
-        <input type="text" placeholder="Enter a Title" ref="pictitle" />
-        <input type="submit" value="Post" />
+        <div className="ui input">
+          <input type="text" placeholder="Enter a URL" ref="picurl" />
+          <input type="text" placeholder="Enter a Title" ref="pictitle" />
+        </div>
+          <input className="compact ui button" type="submit" value="Post" />
       </form>
       );
   }
