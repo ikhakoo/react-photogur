@@ -1,13 +1,21 @@
 var Picture = React.createClass({
   render: function () {
     return (
-      <div className="pictitle">
-          <h2> {this.props.pictitle} </h2>
-          <img className="picurl" src={this.props.picurl}></img>
-      </div>
+          <div className="ui card">
+            <div className="image">
+              <img className="picurl" src={this.props.picurl}></img>
+            </div>
+            <div className="content">
+              <div className="pictitle">
+                <a className="header">{this.props.pictitle}</a>
+              </div>
+            </div>
+          </div>
       );
   }
 });
+
+
  
 var PictureList = React.createClass({
   render: function () {

@@ -31,7 +31,7 @@ gem 'react-rails'
 
 # bootstrapping this shiz
 
-gem 'bootstrap-sass', '~> 3.3.5'
+gem 'semantic-ui-sass'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
