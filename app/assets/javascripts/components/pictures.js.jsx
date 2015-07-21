@@ -72,7 +72,7 @@ var PictureBox = React.createClass({
   render: function () {
     return (
       <div className="pictureBox">
-        <h1>Pictures</h1>
+        <div className="ui center aligned segment" classStyle="font-size:24px;">Photogur made with React and Rails</div>
         <PictureList pictures={this.state.pictures} />
         <PictureForm onPictureSubmit={this.handlePictureSubmit}/>
       </div>
