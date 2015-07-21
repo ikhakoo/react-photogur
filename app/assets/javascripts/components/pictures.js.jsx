@@ -7,7 +7,7 @@ var Picture = React.createClass({
             </div>
             <div className="content">
               <div className="pictitle">
-                <a className="header">{this.props.pictitle}</a>
+                <a className="header" ref={this.props.picurl}>{this.props.pictitle}</a>
               </div>
             </div>
           </div>
