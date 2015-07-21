@@ -29,9 +29,11 @@ gem 'active_model_serializers'
 # lets throw in some react
 gem 'react-rails'
 
-# bootstrapping this shiz
-
+# semantics in this shiz
 gem 'semantic-ui-sass'
+
+# devise for auth
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
