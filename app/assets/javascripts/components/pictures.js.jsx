@@ -1,6 +1,7 @@
 var Picture = React.createClass({
   render: function () {
     return (
+      
           <div className="ui card">
             <div className="image">
               <img className="picurl" src={this.props.picurl}></img>
