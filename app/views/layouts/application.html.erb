@@ -8,6 +8,16 @@
 </head>
 <body>
 
+<div class="ui three item menu">
+  <a class="<%= current_page?(root_path)? 'active item' : 'item'  %>" href="<%= root_path %>">PHOTO SHARE</a>
+  <a class="<%= current_page?(root_path)? 'active item' : 'item'  %>" href="<%= root_path %>">VIDEO SHARE</a>
+  <% if !current_user %>
+  <a class="<%= current_page?(root_path)? 'active item' : 'item'  %>" href="<%= root_path %>">LOG-IN</a>
+  <% else %>
+  <a class="<%= current_page?(root_path)? 'active item' : 'item'  %>" href="<%= root_path %>">LOG-OUT</a>
+  <% end %>
+</div>
+
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
