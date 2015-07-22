@@ -9,8 +9,8 @@
 <body>
 
 <div class="ui three item menu">
-  <a class="<%= current_page?(photos_path)? 'active item' : 'item'  %>" href="<%= photos_path %>">PHOTO SHARE</a>
-  <a class="<%= current_page?(videos_path)? 'active item' : 'item'  %>" href="<%= videos_path %>">VIDEO SHARE</a>
+  <a class="<%= current_page?(photoshare_path)? 'active item' : 'item'  %>" href="<%= photoshare_path %>">PHOTO SHARE</a>
+  <a class="<%= current_page?(vidshare_path)? 'active item' : 'item'  %>" href="<%= vidshare_path %>">VIDEO SHARE</a>
   <% if !current_user %>
   <a class="<%= current_page?(root_path)? 'active item' : 'item'  %>" href="<%= new_user_session_path %>">LOG IN/SIGN UP</a>
   <% else %>

@@ -6,10 +6,10 @@ class HomeController < ApplicationController
   	end
   end
 
-  def photos
+  def photoshare
   end
 
-  def videos
+  def videoshare
   end
 
 end
