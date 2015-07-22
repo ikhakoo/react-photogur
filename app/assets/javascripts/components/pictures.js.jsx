@@ -1,7 +1,7 @@
 var Picture = React.createClass({
   render: function () {
     return (
-      
+
           <div className="ui card">
             <div className="image">
               <img className="picurl" src={this.props.picurl}></img>
@@ -73,7 +73,7 @@ var PictureBox = React.createClass({
   render: function () {
     return (
       <div className="pictureBox">
-        <div className="ui center aligned segment" classStyle="font-size:24px;">Photogur made with React and Rails</div>
+        <div className="ui center aligned segment" classStyle="font-size:24px;">Photo Share made with React and Rails</div>
         <PictureList pictures={this.state.pictures} />
         <PictureForm onPictureSubmit={this.handlePictureSubmit}/>
       </div>
